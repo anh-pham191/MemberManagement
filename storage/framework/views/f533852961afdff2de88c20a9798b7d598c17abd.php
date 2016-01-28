@@ -8,7 +8,8 @@
 
         <h3>  <?php echo e(Form::image($member->image, '',array('height'=>80, 'width'=> 80)   )); ?>
 
-        </h3>
+            </h3>
+        <h1>Bye</h1>
     <?php endforeach; ?>
 
 <?php $__env->stopSection(); ?>

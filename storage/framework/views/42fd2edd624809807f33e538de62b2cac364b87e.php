@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
     <div id="container">
-        <div class="row">
+        <div class="row"  ng-app="" >
             <div class="col-md-2"></div>
             <div class="col-md-4">
                 <h1>Add a Member Here</h1>
@@ -10,19 +10,19 @@
                 <div class="form-group">
                     <?php echo Form::label('name', 'Name'); ?>
 
-                    <?php echo Form::text('name', null, array( 'class'=>'form-control')); ?>
+                    <?php echo Form::text('name', null, array( 'class'=>'form-control', 'ng-model' => 'name')); ?>
 
                 </div>
                 <div class="form-group">
                     <?php echo Form::label('email', 'Email'); ?>
 
-                    <?php echo Form::text('email', null, array( 'class'=>'form-control')); ?>
+                    <?php echo Form::text('email', null, array( 'class'=>'form-control', 'ng-model'=> 'email')); ?>
 
                 </div>
                 <div class="form-group">
                     <?php echo Form::label('phone', 'Phone'); ?>
 
-                    <?php echo Form::text('phone', null, array( 'class'=>'form-control')); ?>
+                    <?php echo Form::text('phone', null, array( 'class'=>'form-control', 'ng-model' => 'phone')); ?>
 
                 </div>
                 <?php echo Form::label('image', 'Upload avatar'); ?>
@@ -37,7 +37,9 @@
 
             </div>
             <div class="col-md-6">
-
+               <h1>{{name}}</h1>
+                <h1>{{email}}</h1>
+                <h1>{{phone}}</h1>
             </div>
         </div>
     </div>

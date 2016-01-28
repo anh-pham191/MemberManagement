@@ -18,7 +18,7 @@ Route::get('/', function () {
 //Route::get('member/create', 'MembersController@create');
 //Route::post('member/create', 'MembersController@store');
 Route::resource('member', 'MembersController');
-
+Route::get('test', 'HomeController@test');
 
 /*
 |--------------------------------------------------------------------------
