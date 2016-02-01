@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Intervention\Image\Facades\Image;
 
@@ -15,7 +16,13 @@ class MembersController extends Controller
 {
     public function index()
     {
-        return view('member.index') -> with('members', Member::all());
+        return view('member.index')->with('members', DB::table('members')->orderBy('name')->get());
+    }
+
+    public function GetMember()
+    {
+//        return Member::all();
+        return DB::table('members')->orderBy('name')->get();
     }
 
     public function create()
@@ -23,7 +30,8 @@ class MembersController extends Controller
         return view('member.create');
     }
 
-    public function store(MemberRequest $request){
+    public function store(MemberRequest $request)
+    {
         $input = $request->all();
         $member = new Member();
         $member->name = $input['name'];
@@ -37,7 +45,7 @@ class MembersController extends Controller
             $path = public_path('img/' . $filename);
 
             $size = '200,200';
-            Image::make($image->getRealPath())->resize(intval($size), null, function($contstraint){
+            Image::make($image->getRealPath())->resize(intval($size), null, function ($contstraint) {
                 $contstraint->aspectRatio();
             })->save($path);
             $member->image = 'img/' . $filename;
@@ -48,17 +56,20 @@ class MembersController extends Controller
 
     }
 
-    public function show($id){
+    public function show($id)
+    {
         $member = Member::find($id);
         return view('member.show', compact('member'));
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         $member = Member::find($id);
         return view('member.edit', compact('member'));
     }
 
-    public function update($id, MemberRequest $request){
+    public function update($id, MemberRequest $request)
+    {
         $member = Member::find($id);
         $input = Input::all();
         $member->name = $input['name'];
@@ -70,7 +81,7 @@ class MembersController extends Controller
             $path = public_path('img/' . $filename);
 
             $size = '200,200';
-            Image::make($image->getRealPath())->resize(intval($size), null, function($contstraint){
+            Image::make($image->getRealPath())->resize(intval($size), null, function ($contstraint) {
                 $contstraint->aspectRatio();
             })->save($path);
             $member->image = 'img/' . $filename;
@@ -80,7 +91,8 @@ class MembersController extends Controller
         return redirect('member');
     }
 
-    public function destroy($id){
+    public function destroy($id)
+    {
         $member = Member::find($id);
         $member->delete();
         return redirect('member');

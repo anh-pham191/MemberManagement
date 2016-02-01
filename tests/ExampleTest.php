@@ -14,6 +14,17 @@ class ExampleTest extends TestCase
     public function testBasicExample()
     {
         $this->visit('/')
-             ->see('Laravel 5');
+            ->see('Laravel ');
+    }
+
+    public function testNewUserRegistration()
+    {
+
+        $this->visit('member/create')
+            ->type('Tuan Anh', 'name')
+            ->type('tuananh191194@gmail.com', 'email')
+            ->type('0945290006', 'phone')
+            ->press('Add Member')
+            ->seePageIs('/member');
     }
 }

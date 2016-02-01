@@ -17,8 +17,6 @@ Route::get('/', function () {
 //Route::get('member', 'MembersController@index');
 //Route::get('member/create', 'MembersController@create');
 //Route::post('member/create', 'MembersController@store');
-Route::resource('member', 'MembersController');
-Route::get('test', 'HomeController@test');
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +31,8 @@ Route::get('test', 'HomeController@test');
 
 Route::group(['middleware' => ['web']], function () {
     //
+    Route::get('getmembers', 'MembersController@GetMember');
+    Route::resource('member', 'MembersController');
+    Route::get('test', 'HomeController@test');
+
 });

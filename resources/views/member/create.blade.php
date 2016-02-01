@@ -2,6 +2,14 @@
 
 @section('content')
     <div id="container">
+        @if($errors->any())
+
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        @endif
         <div class="row"  ng-app="" >
             <div class="col-md-2"></div>
             <div class="col-md-4">
@@ -28,7 +36,7 @@
                 {!! Form::close() !!}
             </div>
             <div class="col-md-6">
-                
+
                <h1>@{{name}}</h1>
                 <h1>@{{email}}</h1>
                 <h1>@{{phone}}</h1>

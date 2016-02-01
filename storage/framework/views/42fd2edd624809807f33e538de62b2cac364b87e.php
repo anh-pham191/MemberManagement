@@ -1,5 +1,13 @@
 <?php $__env->startSection('content'); ?>
     <div id="container">
+        <?php if($errors->any()): ?>
+
+            <ul>
+                <?php foreach($errors->all() as $error): ?>
+                    <li><?php echo e($error); ?></li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
         <div class="row"  ng-app="" >
             <div class="col-md-2"></div>
             <div class="col-md-4">
@@ -37,6 +45,7 @@
 
             </div>
             <div class="col-md-6">
+
                <h1>{{name}}</h1>
                 <h1>{{email}}</h1>
                 <h1>{{phone}}</h1>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>List All Member Here</h1>
+    <h1>Details Page</h1>
 
 
     <h1>{{$member -> name}}</h1>

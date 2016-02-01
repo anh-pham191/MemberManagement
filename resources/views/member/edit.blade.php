@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="container">
-        <div class="row">
+        <div class="row" >
             <div class="col-md-2"></div>
             <div class="col-md-4">
                 <h1>Edit {!! $member->name !!} Here</h1>

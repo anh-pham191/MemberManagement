@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
 
-    <h1>List All Member Here</h1>
+    <h1>Details Page</h1>
 
 
     <h1><?php echo e($member -> name); ?></h1>
