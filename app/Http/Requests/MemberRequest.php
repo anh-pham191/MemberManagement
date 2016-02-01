@@ -26,7 +26,6 @@ class MemberRequest extends Request
         return [
             'name' => 'required|min:3',
             'email' => 'required|email',
-            'phone' => 'required|integer',
         ];
     }
 }
