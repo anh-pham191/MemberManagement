@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19582caa-cb98-4ee6-a8b6-a92ec6b71859" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/AngularJSWorkFlow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/code-sniffer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/eslint_execute.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/installeditorconfig.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/d920399c95c8dfcedee3fee59f459c870b74d6da" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/38ac5e40061366616005ca8fd6fabd2985b17634.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravelcollective/html" afterPath="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vlucas/phpdotenv" afterPath="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MembersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MembersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/MemberRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/MemberRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/main.blade.php" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/member/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/member/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/member/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/member/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/member/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/member/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/member/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/member/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/42fd2edd624809807f33e538de62b2cac364b87e.php" afterPath="$PROJECT_DIR$/storage/framework/views/42fd2edd624809807f33e538de62b2cac364b87e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/6d27bc864dc45d41ce4e65cf1da81f7cf3f454c2.php" afterPath="$PROJECT_DIR$/storage/framework/views/6d27bc864dc45d41ce4e65cf1da81f7cf3f454c2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/924733f9d52218bcdd7c7efad9a163b2b075c695.php" afterPath="$PROJECT_DIR$/storage/framework/views/924733f9d52218bcdd7c7efad9a163b2b075c695.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/edbf0e91925e2ca4c2152a041f916253dc156949.php" afterPath="$PROJECT_DIR$/storage/framework/views/edbf0e91925e2ca4c2152a041f916253dc156949.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/f533852961afdff2de88c20a9798b7d598c17abd.php" afterPath="$PROJECT_DIR$/storage/framework/views/f533852961afdff2de88c20a9798b7d598c17abd.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ExampleTest.php" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/ERRATA.md" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/ERRATA.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/README.md" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/d920399c95c8dfcedee3fee59f459c870b74d6da" afterPath="$PROJECT_DIR$/storage/framework/sessions/d920399c95c8dfcedee3fee59f459c870b74d6da" />
     </list>
     <ignored path="memberCrud.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/member/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
+            <state vertical-scroll-proportion="0.41396105">
               <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding />
             </state>
@@ -101,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemberRequest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MemberRequest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/MemberRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6818182">
+            <state vertical-scroll-proportion="-17.5">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
@@ -881,14 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/member/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ExampleTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375">
@@ -907,8 +866,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/MemberRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6818182">
+        <state vertical-scroll-proportion="-17.5">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/member/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41396105">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding />
         </state>
       </provider>
