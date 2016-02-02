@@ -21,7 +21,6 @@ class MembersController extends Controller
 
     public function GetMember()
     {
-//        return Member::all();
         return DB::table('members')->orderBy('name')->get();
     }
 
@@ -32,25 +31,28 @@ class MembersController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required|min:3',
+            'email' => 'required|email',
+        ]);
         $input = $request->all();
-//        return $input;
         $member = new Member();
         $member->name = $input['name'];
         $member->email = $input['email'];
         $member->phone = $input['phone'];
 
 
-        if ($request->file()) {
-            $image = $request->file('image');
-            $filename = $request->file('image')->getClientOriginalName();
-            $path = public_path('img/' . $filename);
-
-            $size = '200,200';
-            Image::make($image->getRealPath())->resize(intval($size), null, function ($contstraint) {
-                $contstraint->aspectRatio();
-            })->save($path);
-            $member->image = 'img/' . $filename;
-        }
+//        if ($request->file()) {
+//            $image = $request->file('image');
+//            $filename = $request->file('image')->getClientOriginalName();
+//            $path = public_path('img/' . $filename);
+//
+//            $size = '200,200';
+//            Image::make($image->getRealPath())->resize(intval($size), null, function ($contstraint) {
+//                $contstraint->aspectRatio();
+//            })->save($path);
+//            $member->image = 'img/' . $filename;
+//        }
 
         $member->save();
         return redirect('member');
@@ -66,7 +68,6 @@ class MembersController extends Controller
     public function edit($id)
     {
         $member = Member::find($id);
-//        return view('member.edit', compact('member'));
         return redirect('member', compact('member'));
 
     }

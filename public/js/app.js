@@ -29,12 +29,10 @@ app.controller('TestController', function ($scope, $http) {
         $scope.memID = id;
     };
     $scope.saveData = function () {
-        // Posting data to php file
         $http({
             method: 'POST',
             url: '/member',
             data: JSON.stringify($scope.member),  //forms user object
-            //headers : {'Content-Type': 'application/x-www-form-urlencoded'}
         })
             .success(function (data) {
                 $scope.getMember();
@@ -49,7 +47,7 @@ app.controller('TestController', function ($scope, $http) {
         $http({
             method: 'PATCH',
             url: '/member/'+$scope.memID ,
-            data: JSON.stringify($scope.member),  //forms user object
+            data: JSON.stringify($scope.member),
         })
             .success(function (data) {
                 $scope.getMember();
@@ -64,16 +62,6 @@ app.controller('TestController', function ($scope, $http) {
 
     $scope.deleteData = function (id) {
         $scope.deleteID = id;
-        //$http({
-        //    method: 'DELETE',
-        //    url: '/member/'+$scope.deleteID,
-        //}).then(function mySucces(response) {
-        //    $scope.getMember();
-        //}, function myError(response) {
-        //    $scope.myWelcome = response.statusText;
-        //});
         $http.delete('/member/' + $scope.deleteID, $scope.member).then($scope.getMember(), errorCallback);
-
-
     };
 });
