@@ -30,9 +30,10 @@ class MembersController extends Controller
         return view('member.create');
     }
 
-    public function store(MemberRequest $request)
+    public function store(Request $request)
     {
         $input = $request->all();
+//        return $input;
         $member = new Member();
         $member->name = $input['name'];
         $member->email = $input['email'];
@@ -65,7 +66,9 @@ class MembersController extends Controller
     public function edit($id)
     {
         $member = Member::find($id);
-        return view('member.edit', compact('member'));
+//        return view('member.edit', compact('member'));
+        return redirect('member', compact('member'));
+
     }
 
     public function update($id, MemberRequest $request)
